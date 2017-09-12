@@ -53,4 +53,4 @@ After you've downloaded MDLWP, and run `npm install` and `gulp` from the command
 `gulp zip` - Creates a zipped file in the root of the theme. Ignores the bower_components and node_modules directories.
 
 #### Contributors 
-- [Mark Constable](https://github.com/markc) - github updater
+- [Mark Constable](https://github.com/markc) - github updater!!!
