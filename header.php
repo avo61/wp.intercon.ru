@@ -16,11 +16,12 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 
 <?php wp_head(); ?>
-<link rel='stylesheet' type='text/css' href="<?php bloginfo( 'url' ); ?>/?my-custom-content=css" />
+<!-- <link rel='stylesheet' type='text/css' href="<?php bloginfo( 'url' ); ?>/?my-custom-content=css" /> -->
 
 </head>
 
 <body <?php body_class(); ?>>
+
 
 <?php do_action( 'mdlwp_after_opening_body' ); ?>
 
@@ -37,10 +38,10 @@
 
 </header>
 
- <!--<?php get_template_part( 'template-parts/nav', 'drawer' ); ?>-->
+ <?php get_template_part( 'template-parts/nav', 'drawer' ); ?>
 		
-	
+		
 <main class="mdl-layout__content">
-	<div id="content" class="site-content">
+	<!-- <div id="content" class="site-content"> -->
 
 		<?php do_action( 'mdlwp_after_opening_content' ); ?>

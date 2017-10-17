@@ -1,0 +1,1 @@
+{"version":3,"sources":["styles.less"],"names":[],"mappings":"AAAA,OACI,MAAA,IACA,QAAA,YAAA,QAAA,YAAA,QAAA,KACA,iBAAA,KAAA,SAAA,KAAA,KAAA","file":"styles.css","sourcesContent":[".block {\r\n    color: red;\r\n    display: flex;\r\n    flex:wrap;\r\n}"]}

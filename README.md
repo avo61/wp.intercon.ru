@@ -1,56 +1,50 @@
-## MDLWP - A Material Design Lite WordPress Theme
+## INTERCON - Сайт intercon.ru на WordPress 
 
-MDLWP is a Material Design WordPress theme(probably the first!) that uses Sass, Gulp, Bower, and of course Material Design Lite. 
+В качестве шаблона была взята тема: MDLWP is a Material Design WordPress 
 
-[Live Demo](http://mdlwp.com/demo/)
+Выбор темы основан на использовании библиотети Material Design Lite(MDL). Тема пустая, фактически просто скилет.
 
-[Setup Video](https://www.youtube.com/watch?v=1wVJn-Y2-CU)
-
-#### MDLWP Plugins
-Download free and premium plugins that add extra features and extend the functionality of MDLWP. 
-
-- [Material Design Icons](http://mdlwp.com/downloads/material-design-icons/) - thousands of community-led icons
-- [Material Design Login](http://mdlwp.com/downloads/material-design-login-form/) - take over the default WP login screens and turns them into Material Design forms
-- [Material Design Portfolio](http://mdlwp.com/downloads/material-design-portfolio/) - Filterable portfolio layout for MDLWP
-- [Material Design Social Sharing](http://mdlwp.com/downloads/material-design-social-sharing/) - Enables social sharing icons on indiviual posts
-- [Material Design Masonry Layout](http://mdlwp.com/downloads/material-design-masonry-page-layout/) - Turn a page on your MDLWP powered site into a Pinterest style layout
+В ходе разработки от MDL практически отказался и перешел на SmatrGrid (библиотека для генерации сеток на технологии flex)
 
 
-#### Future Plans
-- ~~WordPress customizer options~~ (v1.0.1)
-- ~~add theme hooks~~ (v1.1.3)
-- different page layouts (v1.1.0 - ribbon layout)
-- integrate other MDL components
 
-Do you have an idea? PRs welcome. 
+#### INTERCON Использованные Plugins
 
-#### For the Nerds
-For customization, basic knowledge of the command line and the following dependencies are required to use MDLWP:
+- Advanced Custom Fields PRO - Платный плагин (30$) Для определения и работы с допонительными полями. (Плагин удобный. Но на самом деле хватило бы и бесплатной версии этого плагина)
+- Toolset Types - Бесплатная версия для определения новых типов записей
+- Material Design Icons - Для удобного использования иконок библиотеки MDL
+- Cyr to Lat enhanced -Для преобразования УРЛов в латиницу
+- Duplicator - для создания копий и переноса сайта (бесплатная версия до 2Gb)
+
+
+#### INTERCON Инструментарий
+
 
 - MDL ([http://www.getmdl.io/](http://www.getmdl.io/)) 
-- Node ([http://nodejs.org/](http://nodejs.org/)) -`npm install`
-- Gulp ([http://gulpjs.com/](http://gulpjs.com/)) - `npm install --global gulp`
-- Bower ([http://bower.io/](http://bower.io/)) -`npm install -g bower`
+- SmartGrid ([github.com/dmitry-lavrik/smart-grid](github.com/dmitry-lavrik/smart-grid)) - $ npm i smart-grid 
+- Node ([http://nodejs.org/](http://nodejs.org/)) -`$ npm install`
+- Gulp ([http://gulpjs.com/](http://gulpjs.com/)) - `$ npm install --global gulp`
+- Bower ([http://bower.io/](http://bower.io/)) -`$ npm install -g bower`
 
-#### Usage
-After you've downloaded MDLWP, and run `npm install` and `gulp` from the command line you can start using gulp.
+#### Запуск
+Скачиваете архив и запускаете `npm install` 
 
 #### Gulp
 
-###### 1) Navigate to your new theme
-`cd /your-project/wordpress/wp-content/themes/your-new-theme`
+###### 1) Переходите в директорию проекта
+`cd /your-project/wordpress/wp-content/themes/intercon`
 
-###### 2) Gulp tasks available:
+###### 2) Запускаете нужную задачу Gulp
 
-`gulp` - Automatically handle changes to CSS, javascript, php, and image optimization. Also Livereload!
+`gulp` - Полная сборка
 
-`gulp scripts` - Concatenate and minify javascript files
+`gulp scripts` - Конкатинация и минимизация  javascript файлов
 
-`gulp sass` - Compile, prefix, and minify CSS files
+`gulp sass` - Компиляция Saas в CSS файл
 
-`gulp bower` - Install bower components
+`gulp bower` - 
 
-`gulp zip` - Creates a zipped file in the root of the theme. Ignores the bower_components and node_modules directories.
+`gulp zip` - Создание  zip архива всего проекта в корневой директории
 
-#### Contributors 
-- [Mark Constable](https://github.com/markc) - github updater
+#### Разработчик
+    AVO

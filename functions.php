@@ -5,6 +5,7 @@
  * @package MDLWP
  */
 
+
 if ( ! function_exists( 'mdlwp_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
@@ -38,12 +39,13 @@ function mdlwp_setup() {
 	 *
 	 * @link http://codex.wordpress.org/Function_Reference/add_theme_support#Post_Thumbnails
 	 */
-	add_theme_support( 'post-thumbnails' );
+	// add_theme_support( 'post-thumbnails' );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary Menu', 'mdlwp' ),
 		'secondary' => esc_html__( 'Secondary Menu', 'mdlwp' ),
+		'phone' => esc_html__( 'Phone Menu', 'mdlwp' ),
 		'drawer' => esc_html__( 'Drawer Menu', 'mdlwp' ),
 		'footer' => esc_html__( 'Footer Menu', 'mdlwp' )
 	) );
@@ -82,10 +84,10 @@ function mdlwp_setup() {
 	// ) );
 
 	// Set up the WordPress core custom background feature.
-	add_theme_support( 'custom-background', apply_filters( 'mdlwp_custom_background_args', array(
-		'default-color' => 'f5f5f5',
-		'default-image' => '',
-	) ) );
+	// add_theme_support( 'custom-background', apply_filters( 'mdlwp_custom_background_args', array(
+	// 	'default-color' => 'f5f5f5',
+	// 	'default-image' => '',
+	// ) ) );
 }
 endif; // mdlwp_setup
 add_action( 'after_setup_theme', 'mdlwp_setup' );
@@ -98,7 +100,7 @@ add_action( 'after_setup_theme', 'mdlwp_setup' );
  * @global int $content_width
  */
 function mdlwp_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'mdlwp_content_width', 900 );
+	$GLOBALS['content_width'] = apply_filters( 'mdlwp_content_width', 1260 );
 }
 add_action( 'after_setup_theme', 'mdlwp_content_width', 0 );
 
@@ -210,7 +212,7 @@ function add_my_class_to_nav_menu( $classes, $item ){
 	return $classes;
 }
 
-add_action( 'parse_request', 'my_custom_wp_request' );
+// add_action( 'parse_request', 'my_custom_wp_request' );
 function my_custom_wp_request( $wp ) {
     if (
         !empty( $_GET['my-custom-content'] )
@@ -235,6 +237,11 @@ function my_acf_google_map_api( $api ){
 }
 
 add_filter('acf/fields/google_map/api', 'my_acf_google_map_api');
+
+/**
+ * Секция настроек темы
+ */
+require get_template_directory() .'/inc/options.php';
 
 /**
  * Загрузка функций и определение данных темы intercon

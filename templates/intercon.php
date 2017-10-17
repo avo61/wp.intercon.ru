@@ -11,8 +11,8 @@ get_header(); ?>
     <!--<div class="isp-fon-container">-->
         <!--<div class="isp-new-section">-->
 	
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+	<!-- <div id="primary" class="content-area"> -->
+		<!-- <main id="main" class="site-main" role="main"> -->
 
 			<!--<?php do_action( 'mdlwp_before_content' ); ?>-->
 
@@ -38,5 +38,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 	
-
 <?php get_footer(); ?>

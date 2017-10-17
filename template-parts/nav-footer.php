@@ -8,9 +8,9 @@
  */
 
 	$args = array(
-        'theme_location' => 'footer',
-        'menu_class' => 'mdl-mega-footer__link-list',
-        'container_class' => 'mdl-mega-footer__bottom-section',
+        'theme_location' => 'footer'
+        // 'menu_class' => 'mdl-mega-footer__link-list',
+        // 'container_class' => 'mdl-mega-footer__bottom-section',
 		
 	);
 

@@ -38,7 +38,7 @@
                         <i class="material-icons">credit_card</i>
                         <div>Оплатить</div>
                     </a>
-                    <a class="mdl-navigation__link" href="">
+                    <a class="mdl-navigation__link isp-blink " href="">
                         <i class="material-icons">person_add</i>
                         <div>Подключиться</div>
                     </a>

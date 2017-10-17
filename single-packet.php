@@ -6,9 +6,9 @@
  */
 
 get_header(); ?>
-	
+<div class="full-screan">	
     <div class="isp-fon-container">
-    <div class="isp-new-section">
+        <div class="isp-new-section">
 
 		<?php if ( have_posts() ) :  the_post(); ?>
             <h2>Пакет  <?php echo the_title(); ?> </h2>
@@ -36,7 +36,8 @@ get_header(); ?>
 		<?php endif; ?> 
            
 
+	    </div><!-- #primary -->
 	</div><!-- #primary -->
-	</div><!-- #primary -->
+</div><!-- #primary -->
 
 <?php get_footer(); ?>

@@ -9,6 +9,8 @@ function mdlwp_scripts() {
 	wp_enqueue_style( 'mdlwp-mdl-css', '//storage.googleapis.com/code.getmdl.io/1.2.1/material.'.$primary.'-'.$secondary.'.min.css' );
 	// wp_enqueue_style( 'mdlwp-mdl-css', '//storage.googleapis.com/code.getmdl.io/1.1.3/material.'.$primary.'-'.$secondary.'.min.css' );
 
+	wp_enqueue_style( 'mdlwp-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css' );
+
 	wp_enqueue_style( 'mdlwp-mdl-icons', '//fonts.googleapis.com/icon?family=Material+Icons' );
 
 	wp_enqueue_style( 'mdlwp-mdl-roboto', '//fonts.googleapis.com/css?family=Roboto:300,400,500,700' );
@@ -20,7 +22,9 @@ function mdlwp_scripts() {
 
 	wp_enqueue_script( 'mdlwp-mdlwp-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), '1.1.9', true );
 
-	wp_enqueue_style( 'mdlwp-intercon-style', get_template_directory_uri() . '/css/intercon.css' );
+	// wp_enqueue_style( 'mdlwp-intercon-style', get_template_directory_uri() . '/css/intercon1.css' );
+	wp_enqueue_style( 'mdlwp-intercon-font', get_template_directory_uri() . '/font/font_magistral.css' );
+	wp_enqueue_style( 'mdlwp-main-style', get_template_directory_uri() . '/css/main.css' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

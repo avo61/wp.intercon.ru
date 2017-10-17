@@ -1,0 +1,131 @@
+.mdl-layout__header--isp {
+    /*overflow: visible;*/
+    background-color: @color-fon !important;
+    color: @color-menu !important;
+}
+
+
+.mdl-layout-title--mobile-isp {
+    display: none !important;
+}
+
+.mdl-layout__header-row .mdl-navigation__link {
+    color: @color-menu;
+    font-weight: 200;
+    height: 60px;
+}
+
+.mdl-navigation__link--isp-drawer {
+    font-size: 14px;
+    color:  @color-menu !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+.sm-block( {
+
+        .mdl-navigation--isp-row {
+            display: none;
+        }
+        .mdl-navigation--isp-row2 {
+            display: none;
+        }
+        .mdl-layout-title--nomobile-isp {
+            display: none !important;
+        }
+        .mdl-layout-title--mobile-isp {
+            display: block !important;
+            position: absolute;
+            left: calc(50% - 70px);
+            //    top: 12px;
+            transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+}
+);
+
+.mdl-navigation__link--isp-row {
+    font-size: 20px !important;
+    color: @color-isp !important;
+}
+
+.mdl-navigation__link--isp-row:hover {
+    color: @color-menu !important;
+    /*font-size: 20px !important;*/
+    /*color: rgb(248, 112, 0) !important;*/
+}
+.mdl-navigation__link--isp-telefon {
+
+    line-height: 20px!important;
+}
+
+.mdl-navigation__link--isp-kabinet {
+    padding-left: 50px !important;
+}
+
+.isp-telefon {
+    color:  @color-menu;
+
+    text-align: right;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+// 
+// 
+// 
+.mdl-layout__header-row2 {
+    height: 80px !important;
+}
+
+.mdl-navigation--isp-row2 .material-icons {
+    /*color: rgb(248, 112, 0) !important;*/
+    font-size: 48px;
+    text-align: center;
+}
+
+.mdl-navigation--isp-row2 .mdl-navigation__link {
+    display: block;
+ 
+    flex-shrink: 0;
+    padding: 10px 20px;
+    margin: 0;
+    color: @color-menu;
+    line-height: 20px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.mdl-navigation--isp-row2 .mdl-navigation__link:hover {
+    color:  @color-isp;
+}
+
+.mdlwp-search-box {
+
+    order: 2;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+
+.mdl-layout__header .mdl-layout__drawer-button {
+    color: black;
+    // display: none; 
+}
+
+.lg-block( {
+    .mdl-layout__header .mdl-layout__drawer-button {
+        color: black;
+        display: block;
+    }
+});
+
+.isp-blink {
+	animation: blink 4s linear infinite; 
+	color: @color-isp; 
+}
+
+@keyframes blink {  
+	0% { color: @color-menu; }
+	50% { color: @color-isp; }
+	100% { color: @color-menu; } 
+}

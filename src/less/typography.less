@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'magistralc';
+    src: url('MagistralC-Bold.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div {
+    font-family: "Magistral";
+}
+
+dir {
+    padding: 0;
+    margin: 0;
+}
+
+.reset();
+a {
+    text-decoration: none;
+    color: @color-menu;
+}
+
+body,
+html {
+    font-family: "Magistral", "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 20px;
+    .md( font-size,
+    18px);
+    .sm( font-size,
+    18px);
+    .xs( font-size,
+    16px);
+    .xxs( font-size,
+    14px);
+    height: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: @color-isp;
+    .lg(font-size,
+    2rem);
+    .xs(font-size,
+    1.4rem);
+    font-weight: 300;
+    font-family: "magistral";
+}
+
+h2 {
+    font-size: 2rem;
+    .lg(font-size,
+    1.6rem);
+    .xs(font-size,
+    1.2rem);
+    font-weight: 300;
+    font-family: "magistral";
+}
+
+h3 {
+    font-size: 1.6rem;
+    .xs(font-size,
+    1.2rem);
+    font-weight: 400;
+    font-family: "magistral";
+}
+
+h4 {
+    font-size: 1.4rem;
+    .xs(font-size,
+    1.2rem);
+    font-weight: 400;
+    font-family: "magistral";
+}
+
+h5 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    font-family: "magistral";
+}
+
+h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    font-family: "magistral";
+    padding-bottom: 0.5rem;
+}
+
+a {
+    text-decoration: none;
+    color: @color-menu;
+    font-weight: 200;
+}
+
+p {
+    font-size: 0.8rem;
+    font-weight: 200;
+}
+
+.font-light {
+    font-weight: 300;
+}
+
+.isp-fon-container {
+    background: linear-gradient(to bottom, #FCFCFC, #F6F6F6);
+}
+
+.isp-new-section {
+    padding: 1rem 0.5rem;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.full-screan {
+    min-height: ~"calc(100vh - 320px)";
+}

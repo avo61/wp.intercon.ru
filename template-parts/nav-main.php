@@ -8,8 +8,9 @@
  */
 
 ?>
-
+<div class="mdl-layout-icon"></div>
 <div class="mdl-layout__header-row mdl-layout__header--isp">
+
   <!-- Title -->
   <span class="mdl-layout-title">         
 	  <!--<?php bloginfo( 'name' ); ?>-->
