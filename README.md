@@ -19,7 +19,6 @@
 
 #### INTERCON Инструментарий
 
-
 - MDL ([http://www.getmdl.io/](http://www.getmdl.io/)) 
 - SmartGrid ([github.com/dmitry-lavrik/smart-grid](github.com/dmitry-lavrik/smart-grid)) - $ npm i smart-grid 
 - Node ([http://nodejs.org/](http://nodejs.org/)) -`$ npm install`
