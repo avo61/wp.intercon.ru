@@ -32,13 +32,13 @@
 		    }
 	?>
                 <div class="mdl-layout-spacer"></div>
-                <nav class="mdl-navigation mdl-navigation--isp-row2">
+                <nav class="mdl-navigation mdl-navigation--isp-row2  hide-lg ">
 
                     <a class="mdl-navigation__link" href="">
                         <i class="material-icons">credit_card</i>
                         <div>Оплатить</div>
                     </a>
-                    <a class="mdl-navigation__link isp-blink " href="">
+                    <a class="mdl-navigation__link isp-blink " href="<?php echo home_url(); ?>/connect">
                         <i class="material-icons">person_add</i>
                         <div>Подключиться</div>
                     </a>

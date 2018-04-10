@@ -12,7 +12,7 @@
 <div class="mdl-cell mdl-cell--12-col mdl-card mdl-shadow--2dp"> 
 	<section class="no-results not-found mdl-card__supporting-text">
 		<header class="page-header">
-			<h1 class="page-title"><?php esc_html_e( 'Nothing Found', 'mdlwp' ); ?></h1>
+			<h2 class="page-title"><?php echo 'Описание не найдено'?></h2>
 		</header><!-- .page-header -->
 
 		<div class="page-content">
@@ -26,7 +26,7 @@
 
 			<?php else : ?>
 
-				<p><?php esc_html_e( 'It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help.', 'mdlwp' ); ?></p>
+				<p><?php echo 'Обратитесть к администратору сайта' ?></p>
 
 			<?php endif; ?>
 		</div><!-- .page-content -->

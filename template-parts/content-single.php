@@ -17,6 +17,7 @@
     $title_color_value = get_post_meta( get_the_ID(), 'mdlwp-title-color', true ); 
     // Checks and returns the color value
   	$title_color = (!empty( $title_color_value ) ? 'color:' . $title_color_value . ';' : '');
+  	// $title_color = (!empty( $title_color_value ) ? 'color:' . $title_color_value . ';' : '');
 
   	// Gets the stored height value 
     $height_value = get_post_meta( get_the_ID(), 'mdlwp-height', true ); 

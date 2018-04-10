@@ -42,7 +42,7 @@
                 <nav class="mdl-navigation  mdl-navigation--isp-row">
                     <a class="mdl-navigation__link mdl-navigation__link--isp-kabinet mdl-navigation__link--isp-row" href="https://myintercon.ru/login"><i class="material-icons">lock</i>Кабинет</a>
 
-                    <a class="mdl-navigation__link  mdl-navigation__link--icon  mdl-navigation__link--isp-row mdl-navigation__link--isp-telefon" href="">
+                    <a class="mdl-navigation__link  mdl-navigation__link--icon  mdl-navigation__link--isp-row mdl-navigation__link--isp-telefon" href="tel:+7(473) 239-10-10">
                         <div class="isp-telefon">круглосуточно</div> <i class="material-icons">phone</i><span>+7(473)</span> 239-10-10</a>
                 </nav>
 </div>

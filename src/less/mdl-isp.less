@@ -15,12 +15,31 @@
     height: 60px;
 }
 
+.mdl-layout__header-row .mdl-navigation__link a:hover {
+    color: @color-isp;
+    font-weight: 200;
+    height: 60px;
+}
+
 .mdl-navigation__link--isp-drawer {
     font-size: 14px;
     color:  @color-menu !important;
     padding-top: 10px !important;
     padding-bottom: 10px !important;
 }
+
+
+.md-block( {
+        .mdl-layout__header-row2 {
+        display: none;
+        }
+ });
+ 
+.lg-block( {
+    .mdl-layout__header-row2 .hide-lg  {
+        display: none !important;
+    }
+});
 
 .sm-block( {
 
@@ -75,6 +94,10 @@
 // 
 .mdl-layout__header-row2 {
     height: 80px !important;
+    .md-block( {
+        height: 0;
+        display: none;
+    });
 }
 
 .mdl-navigation--isp-row2 .material-icons {

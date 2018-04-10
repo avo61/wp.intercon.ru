@@ -6,7 +6,7 @@
  */
 
 get_header(); ?>
-	
+<div class="full-screan">		
     <div class="isp-fon-container">
     <div class="isp-new-section">
         <?php 
@@ -15,11 +15,10 @@ get_header(); ?>
          ?>
         <div class="">
             <div class="kart " id="mapfull">
-
             </div>
         </div>
-        <!-- <?php //the_yandex_map(intercon_map) ?> -->
-	</div><!-- #primary -->
-	</div><!-- #primary -->
+	</div>
+	</div>
+</div>
 
 <?php get_footer(); ?>

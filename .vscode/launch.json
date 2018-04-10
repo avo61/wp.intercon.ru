@@ -1,11 +1,22 @@
 {
     "version": "0.2.0",
-    "configurations": [{
-            "name": "Listen for XDebug",
+    "configurations": [
+
+        {
+            "name": "Локальный XDebug",
             "type": "php",
             "request": "launch",
-            "port": 9000
+            "port": 9000           
         },
+        {
+            "name": "test.intercon.ru XDebug",
+            "type": "php",
+            "request": "launch",
+            "port": 9000,
+            "pathMappings": {
+                "/var/www/test.intercon.ru/wp-content/themes/intercon-01": "${workspaceRoot}"
+              }            
+        },        
         {
             "name": "Launch currently open script",
             "type": "php",

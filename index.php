@@ -9,48 +9,56 @@
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
  * @package MDLWP
+ * 
+ * 
+ * Этот template никогда не должен выполнятся в INTERCON
+ * Если он выполнился, значит что то пошло не так
+ * 
+ * 
  */
 
 get_header(); ?>
 
+<div class="full-screan">		
+<div class="isp-fon-container">
+<div class="isp-new-section">
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main mdl-grid mdlwp-900" role="main">
+        <?php if (have_posts()) : ?>
 
-		<?php if ( have_posts() ) : ?>
+            <?php do_action( 'mdlwp_before_content' ); ?>
 
-			<?php do_action( 'mdlwp_before_content' ); ?>
+            <?php /* Start the Loop */ ?>
+            <?php while (have_posts()) :
+                the_post(); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+                <?php
 
-				<?php
-
-					/*
+                    /*
 					 * Include the Post-Format-specific template for the content.
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
-					get_template_part( 'template-parts/content', get_post_format() );
-				?>
+                    get_template_part( 'template-parts/content', get_post_format() );
+                ?>
 
-			<?php endwhile; ?>
+            <?php endwhile; ?>
 
-			<?php do_action( 'mdlwp_before_pagination' ); ?>
+            <?php do_action( 'mdlwp_before_pagination' ); ?>
 
-			<?php mdlwp_posts_navigation(); ?>
+            <?php mdlwp_posts_navigation(); ?>
 
-			<?php do_action( 'mdlwp_after_pagination' ); ?>
+            <?php do_action( 'mdlwp_after_pagination' ); ?>
 
-		<?php else : ?>
+        <?php else : ?>
 
-			<?php get_template_part( 'template-parts/content', 'none' ); ?>
+            <?php get_template_part( 'template-parts/content', 'none' ); ?>
 
-		<?php endif; ?>
+        <?php endif; ?>
 
-		<?php do_action( 'mdlwp_after_content' ); ?>
+        <?php do_action( 'mdlwp_after_content' ); ?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+        </div>
+        </div>
+    </div>
 
 <?php get_footer(); ?>

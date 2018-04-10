@@ -17,11 +17,12 @@ const config = {
     src: './src',
     dst: '.',
     dstftp: '/wp-content/themes/intercon-01',
-    watch: '{.,./inc,./temlate-parts,./templates,./css,./font/**,./js/**}/*.{php,css,js}',
+    watch: '{.,./inc,./template-parts,./templates,./css,./font/**,./js/**}/*.{php,css,js}',
     css: {
         watch: '/less/**/*.less',
         src: '/less/main.less',
-        dst: '/css'
+        dst: ''
+            // dst: '/css'
     },
     html: {
         src: '/*.php'
@@ -34,6 +35,8 @@ const config = {
 const syncOpts = {
     proxy: 'test.intercon.ru',
     // proxy: 'wp.office.intercon.ru',
+    // host: 'test.intercon.ru',
+    // open: 'external',
     file: '*/**/*.php'
         //    files: dir.build + '**/*',
         // open: true,
@@ -111,6 +114,7 @@ gulp.task('scripts', ['jshint'], function() {
 
 gulp.task('preproc', function() {
     gulp.src(config.src + config.css.src)
+        .pipe(debug({ title: 'preproc' }))
         .pipe(sourcemaps.init())
         .pipe(preproc())
         .pipe(autoprefixer({
@@ -118,6 +122,8 @@ gulp.task('preproc', function() {
             cascade: false
         }))
         .pipe(sourcemaps.write('.'))
+        .pipe(rename('style.css'))
+        .pipe(debug({ title: 'preproc' }))
         .pipe(gulp.dest(config.dst + config.css.dst));
 
     gulp.src(config.src + config.css.src)
@@ -163,8 +169,7 @@ gulp.task('less', function() {
 
 // browser-sync
 gulp.task('start', () => {
-    //    if (start === false) {
-    // browserSync = require('browser-sync').create();
+
     browserSync.init(syncOpts);
-    //    }
+
 });

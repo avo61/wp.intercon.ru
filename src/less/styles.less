@@ -1,104 +1,4 @@
-// @color-isp: rgba(255, 115, 0, 0.9);
-// @color-ispA: rgba(7, 118, 160, 1);
-// @color-ispB: rgba(0, 166, 124, 1);
-// @color-ispC: rgba(127, 57, 0, 1);
-// @color-menu: rgba(0, 0, 0, 0.8);
-// @color-menu-hover: @color-isp;
-// @color-text: rgba(0, 0, 0, 0.9);
-// @color-white: rgba(255, 255, 255, 1);
-// @color-black: rgba(0, 0, 0, 1);
-// @color-prefuter: #888;
-// @color-footer: #444;
-// @color-footer1: #666;
-// @import "smart-grid.less";
-// @font-face {
-//     font-family: 'magistralc';
-//     src: url('MagistralC-Bold.otf');
-//     font-weight: normal;
-//     font-style: normal;
-// }
-// div {
-//    font-family: "Magistral";
-// }
-// dir {
-//     padding: 0;
-//     margin: 0;
-// }
-// .reset();
-// a {
-//     text-decoration: none;
-//     color: @color-menu;
-// }
-// body,
-// html {
-//     font-family: "Magistral","Roboto", "Helvetica", "Arial", sans-serif;
-//     font-size: 20px;
-//     .md( font-size, 18px);
-//     .sm( font-size, 18px);
-//     .xs( font-size, 16px);
-//     .xxs( font-size, 14px);
-//     height: 100%;
-// }
-// h1 {
-//     font-size: 3rem;
-//     color: @color-isp;
-//     .lg(font-size, 2rem);
-//     .xs(font-size, 1.4rem);
-//     font-weight: 300;
-//     font-family: "magistral";
-// }
-// h2 {
-//     font-size: 2rem;
-//     .lg(font-size, 1.6rem);
-//     .xs(font-size, 1.2rem);
-//     font-weight: 300;
-//     font-family: "magistral";
-// }
-// h3 {
-//     font-size: 1.6rem;
-//     .xs(font-size, 1.2rem);
-//     font-weight: 400;
-//     font-family: "magistral";
-// }
-// h4 {
-//     font-size: 1.4rem;
-//     .xs(font-size, 1.2rem);
-//     font-weight: 400;
-//     font-family: "magistral";
-// }
-// h5 {
-//     font-size: 1.2rem;
-//     font-weight: 400;
-//     font-family: "magistral";
-// }
-// h6 {
-//     font-size: 1rem;
-//     font-weight: 400;
-//     font-family: "magistral";
-// }
-// a {
-//     text-decoration: none;
-//     color: @color-menu;
-// }
-// p {
-//     font-size: 0.8rem;
-// }
-// .font-light {
-//     font-weight: 300;
-// }
-// .mdl-layout__header-row .mdl-navigation__link {
-//     color: @color-menu;
-//     font-weight: 200;
-// }
-// .isp-fon-container {
-//     background: linear-gradient(to bottom, #FCFCFC, #F6F6F6);
-// }
-// .isp-new-section {
-//     padding: 1rem 0.5rem;
-//     max-width: 1280px;
-//     margin-left: auto;
-//     margin-right: auto;
-// }
+
 .wrapper {
     .wrapper();
 }
@@ -224,6 +124,7 @@
             opacity: 0;
             background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(255, 255, 255, 1));
             transition-duration: 1s;
+            opacity: 1;
         }
     }
     &__text {
@@ -298,7 +199,7 @@
         .col();
         .size(2);
         .size-lg(2);
-        .size-md(2);
+        .size-md(3);
         .size-sm(4);
         .size-xs(5);
         .size-xxs(7);
@@ -613,7 +514,7 @@
     padding-top: 30px;
     height: 0;
     overflow: hidden;
-    background: url('../images/intercon__fon1.png') center / cover;
+    background: url('./images/intercon__fon1.png') center / cover;
     iframe {
         position: absolute;
         top: 0;
@@ -621,7 +522,25 @@
         width: 100%;
         height: 100%;
     }
-} // 
+}
+.video-yutube {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    border: solid 1px;
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+// 
 // Прайсы 
 //
 .grid-wrapper {
@@ -741,6 +660,7 @@
     @color-ispA);
 }
 
+
 .price-card {
     height: 100%; // border: 2px solid @color-isp;
     border-radius: 1px;
@@ -827,14 +747,42 @@
 .contact-wrapper {
     margin-left: 50px;
     position: relative;
+
     i {
         position: absolute;
         left: -30px;
+        // font-size: 36px;
+    }
+    p {
+        
+        margin-bottom: 20px;
+    }
+} 
+
+.list-wrapper {
+    margin-left: 100px;
+    position: relative;
+    i {
+        position: absolute;
+        left: -50px;
+        font-size: 36px;
+        color: @color-ispA;
+        line-height: 24px;
     }
     p {
         margin-bottom: 20px;
+        // vertical-align:bottom;
+        i {
+    
+            position: absolute;
+            left: -50px;
+            font-size: 36px;
+            color: @color-ispA;
+        }        
     }
-} // .contact-icon{
+} 
+
+// .contact-icon{
 //     margin-left: -30px;
 //     display: inline-block;
 // }
@@ -870,4 +818,61 @@
     color: @color-ispA;
     font-size: 0.8em;
     font-weight: 400;
+}
+
+// 
+// 
+// 
+.apps-list{
+    text-align: center;
+    margin-top: 3rem;
+    // margin-bottom: 20px;   
+    ul{
+        list-style: none;
+        // margin-top: 20px;
+        // margin-bottom: 20px;
+        display: block;
+        li {
+            display: inline-block;
+            font-size: 0.6rem;
+            font-weight: 100;
+            text-align: match-parent;
+            img {
+                height: 100px;
+                width: auto;
+                display: block;
+            }
+        }
+    }
+}
+
+.section-tarif{
+    margin-top: 3rem;
+}
+//
+//  Виджет
+//
+.widget{
+    h5,h6{
+        color: @color-isp;
+        margin-bottom: 0;
+    }
+}
+//
+// Смотрешка
+//
+.smotreshka_hero {position: fixed; bottom: 50px; right: 0; width: 300px; height: 321px; z-index: 99; text-align: right;}
+.smotreshka_hero .smotreshka01 {background: url(./images/smotreshka/smotreshka01.gif); width: 321px; height: 250px; position: absolute; bottom: 0; right: 0;}
+
+.smotreshka_hero .exit_hero {position: absolute; top: 100px; left: 3px; cursor: pointer; display: none; z-index: 11;}
+.smotreshka_hero:hover .exit_hero {display: table;}
+//
+// Хлебные крошки
+//
+#breadcrumbs {
+    padding-left: 30px;
+    font-family: "Roboto";
+    font-style: italic;
+    // text-decoration: underline;
+
 }

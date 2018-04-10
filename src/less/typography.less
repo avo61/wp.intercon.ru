@@ -1,14 +1,6 @@
-@font-face {
-    font-family: 'magistralc';
-    src: url('MagistralC-Bold.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-div {
-    font-family: "Magistral";
-}
-
+// div {
+//     font-family: "Magistral", "Roboto", "Helvetica", "Arial", sans-serif;
+// }
 dir {
     padding: 0;
     margin: 0;
@@ -21,68 +13,67 @@ a {
 }
 
 body,
-html {
+html,
+h1,h2,h3,h4,h5,h6,
+p,a,
+ {
     font-family: "Magistral", "Roboto", "Helvetica", "Arial", sans-serif;
+}
+
+body,
+html {
     font-size: 20px;
-    .md( font-size,
-    18px);
-    .sm( font-size,
-    18px);
-    .xs( font-size,
-    16px);
-    .xxs( font-size,
-    14px);
+    font-weight: 200;
+    .lg( font-size, 20px);
+    .md( font-size, 18px);
+    .sm( font-size, 18px);
+    .xs( font-size, 16px);
+    .xxs( font-size, 14px);
     height: 100%;
 }
 
 h1 {
     font-size: 3rem;
     color: @color-isp;
-    .lg(font-size,
-    2rem);
-    .xs(font-size,
-    1.4rem);
-    font-weight: 300;
-    font-family: "magistral";
+    .lg(font-size, 2rem);
+    .md(font-size, 1.8rem);
+    .xs(font-size, 1.4rem);
+    font-weight: 300; // font-family: "magistral";
 }
 
 h2 {
     font-size: 2rem;
-    .lg(font-size,
-    1.6rem);
-    .xs(font-size,
-    1.2rem);
-    font-weight: 300;
-    font-family: "magistral";
+    .lg(font-size, 1.6rem);
+    .md(font-size, 1.4rem);
+    .xs(font-size, 1.2rem);
+    font-weight: 300; // font-family: "magistral";
+    margin-bottom: 1rem;
 }
 
 h3 {
     font-size: 1.6rem;
-    .xs(font-size,
-    1.2rem);
-    font-weight: 400;
-    font-family: "magistral";
+    .xs(font-size, 1.2rem);
+    font-weight: 400; // font-family: "magistral";
+    margin-bottom: 0.5rem;
 }
 
 h4 {
     font-size: 1.4rem;
-    .xs(font-size,
-    1.2rem);
-    font-weight: 400;
-    font-family: "magistral";
+    .xs(font-size, 1.2rem);
+    font-weight: 200; // font-family: "magistral";
+    margin-bottom: 0.5rem;
 }
 
 h5 {
     font-size: 1.2rem;
-    font-weight: 400;
-    font-family: "magistral";
+    font-weight: 200; // font-family: "magistral";
+    margin-bottom: 0.5rem;
 }
 
 h6 {
     font-size: 1rem;
-    font-weight: 400;
-    font-family: "magistral";
-    padding-bottom: 0.5rem;
+    font-weight: 200; // font-family: "magistral";
+    margin-bottom: 0.5rem;
 }
 
 a {
@@ -91,26 +82,154 @@ a {
     font-weight: 200;
 }
 
+div,
 p {
     font-size: 0.8rem;
     font-weight: 200;
+    line-height: 1.2rem;
+}
+
+ul,
+ol {
+    font-size: 0.8rem;
+    font-weight: 200;
+    line-height: 1.6rem;
 }
 
 .font-light {
     font-weight: 300;
 }
 
-.isp-fon-container {
-    background: linear-gradient(to bottom, #FCFCFC, #F6F6F6);
+.font-size-1-2rem {
+    font-size: 1rem;
 }
 
-.isp-new-section {
-    padding: 1rem 0.5rem;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+h2.color {
+    color: @color-isp !important;
 }
 
-.full-screan {
-    min-height: ~"calc(100vh - 320px)";
+.color {
+    color: @color-isp!important;
+}
+
+p.botton {
+    margin-bottom: 1rem;
+}
+
+p.top {
+    margin-top: 1rem;
+}
+
+.br1 {
+    min-height: 1rem;
+}
+
+// *************************************
+// 
+//input  Для Form 7
+//
+input:not([type]),
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="tel"],
+input[type="url"],
+input[type="text"] {
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+input[type="text"]:focus {
+    outline: 0;
+}
+
+// input:focus {
+//     border: 1px solid red!important;
+// }
+textarea,
+input {
+    color: #888;
+    background-color: white;
+    user-select: text;
+    cursor: auto;
+    padding: 5px; // border: 1px solid #AAA;
+    outline: 0;
+    border: none;
+    border-bottom: 1px solid #AAA;
+}
+
+textarea:focus,
+input:focus {
+    outline: 0;
+    border-bottom: 1px solid @color-isp;
+}
+
+textarea {
+    width: 100%;
+    resize: vertical; // resize: horizontal;
+    box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+    padding: 5px;
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+span+span {
+    font-size: 0.8em;
+    font-weight: 100;
+    display: inline-block;
+    // padding-left: 1rem;
+}
+
+span.wpcf7-not-valid-tip {
+    color: #f00;
+    font-size: 0.8em;
+    font-weight: 200;
+    display: inline-block;
+    padding-left: 1rem;
+}
+
+// *************************************
+table {
+    border-spacing: 10px 20px;
+    font-size: 0.8rem;
+    font-weight: 200;
+    border: 1px solid rgb(214, 216, 219);
+    margin: auto;
+}
+
+tr:nth-child(2n) {
+    background: #fff;
+}
+
+th,
+td {
+    padding: 5px 5px;
+}
+
+// img {
+    // border: 2px solid #cfcfcf;
+    // border-radius: 5px;
+// }
+
+.style111 {
+    opacity: 1;
+    transform: translateX(0px) translateY(0px);
+    transition: opacity 500ms ease-in, transform 500ms ease-in;
 }

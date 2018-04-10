@@ -1,13 +1,12 @@
 <?php
 /**
- * The template for displaying пакеты.
+ * The template для Пакетов
  *
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package MDLWP
+ * @package INTERCON
  */
 
 get_header(); ?>
-
+<div class="full-screan">	
 <?php echo get_intercon_packet( "", "Пакеты" );?>
+</div>
 <?php get_footer(); ?>

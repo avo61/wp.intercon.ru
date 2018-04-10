@@ -4,11 +4,11 @@
  *
  * Learn more: http://codex.wordpress.org/Template_Hierarchy
  *
- * @package MDLWP
+ * @package 
  */
 
 get_header(); ?>
- <?php        printf( "-----************  archive.php *********************-----"); ?>	
+ <?php        printf( "-----************  archive.php *********************-----");  ?>	
 		
 	<div id="primary" class="mdl-grid content-area">
 		<main id="main" class="site-main mdl-grid mdlwp-900" role="main">
@@ -17,7 +17,7 @@ get_header(); ?>
 
 			<header class="page-header mdl-cell mdl-cell--12-col">
 				<?php
-					the_archive_title( '<h1 class="page-title">', '</h1>' );
+					// the_archive_title( '<h1 class="page-title">', '</h1>' );
 					the_archive_description( '<div class="taxonomy-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
@@ -32,6 +32,7 @@ get_header(); ?>
 					 * If you want to override this in a child theme, then include a file
 					 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
 					 */
+					$s = get_post_format();
 					get_template_part( 'template-parts/content', get_post_format() );
 				?>
 

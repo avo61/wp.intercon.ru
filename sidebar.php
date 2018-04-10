@@ -1,15 +1,15 @@
 <?php
 /**
- * The sidebar containing the main widget area.
+ * Сайтбар контейнер
  *
- * @package MDLWP
+ * @package INTERCON
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+if ( ! is_active_sidebar( 'tarif-sidebar' ) ) {
 	return;
 }
 ?>
 
-<div id="secondary" class="widget-area mdl-cell mdl-cell--4-col mdl-cell--4-col-desktop" role="complementary">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</div><!-- #secondary -->
+<div id="sidebar" class="isp-section__sidebar" >
+	<?php dynamic_sidebar( 'tarif-sidebar' ); ?>
+</div>
